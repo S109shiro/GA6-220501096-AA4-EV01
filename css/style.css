@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#FFE873;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(75, 139, 190, 0.6); 
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.head h1 {
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+}
+
+.head img {
+    width: 60px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .head {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .head img {
+        width: 50px;
+    }
+}
+
+
+.indice {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    max-width: 700px;
+    margin: 30px auto;
+    border: 1px solid #e0e6ef;
+}
+
+
+.indice ol {
+    list-style: decimal inside;
+    margin: 0;
+    padding: 0;
+}
+
+
+.indice li {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+
+.indice a {
+    color: #0b5cab;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.indice a:hover {
+  color: #FFD43B;
+  text-decoration: underline;
+}
+
+
+.contenido{
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    
+}
+
+
+.element{
+    padding: 0.9rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    padding-top: 0.1rem;
+    background-color: white;
+    box-shadow: 0 4px 12px rgb(48, 105, 152);
+}
+
+
+.conjunto_imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.conjunto_imagenes .imagen{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conjunto_imagenes .imagen:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 212, 59);
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.contenedor-cartas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.carta {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+}
+
+.carta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(48, 105, 152);
+}
+
+
+.carta p {
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #333;
+    text-align: justify;
+}
+
+.piePagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(75, 139, 190, 0.6); ; 
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.piePagina p {
+    color: #000;
+    margin: 0;
+}

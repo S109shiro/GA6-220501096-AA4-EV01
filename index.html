@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tutorial - Cómo instalar Python en Windows</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/ico.svg" type="image/x-icon">
 </head>
 <body>
-    
+    <header class="head">
+        <h1>Tutorial: Cómo instalar Python en Windows</h1>
+        <img src="img/ico.svg" alt="Logo de Python">
+    </header>
+
+    <nav class="indice">
+        <ol>
+            <li><a href="#descargar">Descargar el instalador</a></li>
+            <li><a href="#instalar">Instalar Python</a></li>
+            <li><a href="#comprobar">Comprobar la instalación</a></li>
+        </ol>
+    </nav>
+
+    <main class="contenido">
+        <section id="descargar" class="element">
+            <h2>1. Descargar el instalador</h2>
+            <p>
+                Primero debemos entrar a 
+                <a href="https://www.python.org/downloads/" target="_blank">la página oficial de Python</a> 
+                y luego hacer clic en la opción <strong>“Downloads”</strong> para descargar la versión más reciente de Python. 
+                En este caso, la versión <strong>3.14.0</strong>.
+            </p>
+            <div class="conjunto_imagenes">
+                <img class="imagen" src="img/PaginaPython.png" alt="Página web oficial de Python">
+                <img class="imagen" src="img/DescargarPython.png" alt="Sección de descarga de Python">
+            </div>
+        </section>
+
+        <section id="instalar" class="element">
+            <h2>2. Instalación del archivo .exe</h2>
+            <div class="contenedor-cartas">
+                <div class="carta">
+                    <img class="imagen" src="img/Setup.png" alt="Instalador de Python">
+                    <p>
+                        Ahora abrimos el instalador que acabamos de descargar. 
+                        Nos mostrará la siguiente pantalla.
+                    </p>
+                </div>
+
+                <div class="carta">
+                    <img class="imagen" src="img/Setup2.png" alt="Instalando Python">
+                    <p>
+                        Lo dejamos como se ve en la imagen y hacemos clic en <strong>“Install Now”</strong>. 
+                        Comenzará la instalación de todos los componentes necesarios para que Python funcione correctamente en nuestro PC.
+                    </p>
+                </div>
+
+                <div class="carta">
+                    <img class="imagen" src="img/Setup3.png" alt="Instalación finalizada">
+                    <p>
+                        Una vez finalizada la instalación, se mostrará esta pantalla indicando que todo fue un éxito. 
+                        Con esto ya podemos cerrar el instalador.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="comprobar" class="element">
+            <h2>3. Comprobar que Python esté instalado</h2>
+            <div class="contenedor-cartas">
+                <div class="carta">
+                    <p>
+                        Para verificar que Python se haya instalado correctamente, abrimos la consola. 
+                        Usamos la combinación de teclas <strong>Windows + R</strong> y escribimos <code>cmd</code>.
+                    </p>
+                    <img class="imagen" src="img/ejecutar-cmd.png" alt="Abrir la consola con Ejecutar">
+                </div>
+
+                <div class="carta">
+                    <p>
+                        Esto abrirá la consola de comandos. 
+                        En ella escribimos <code>python --version</code> para comprobar si Python está instalado y qué versión tenemos.
+                    </p>
+                    <img class="imagen" src="img/versionPython.png" alt="Versión de Python en CMD">
+                </div>
+
+                <div class="carta">
+                    <p>
+                        Si todo salió bien, ya podemos comenzar a programar desde la consola usando el comando <code>python</code> 
+                        seguido de las instrucciones que deseemos ejecutar.
+                    </p>
+                    <img class="imagen" src="img/finalPython.png" alt="Ejemplo de Python ejecutándose en CMD">
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+    <footer class="piePagina">
+        <p><small>Creado por WorkPro © 2025</small></p>
+    </footer>
 </body>
 </html>
